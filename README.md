@@ -7,7 +7,11 @@
 
 
 
-## 2. Install and configure xrdp to use Remote Desktop with Ubuntu
+## 2. Install XFCE (GUI Desktop for Ubuntu Linux VM)
+
+https://www.xfce.org/
+
+## 2. Install and configure XRDP to use Remote Desktop with Ubuntu
 
 https://learn.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop?tabs=azure-cli
 
