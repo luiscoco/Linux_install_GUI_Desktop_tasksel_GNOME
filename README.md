@@ -1,5 +1,19 @@
 # Linux_install_GUI_Desktop_tasksel_GNOME
 
+https://serverspace.io/es/support/help/install-gnome-ubuntu-22-04/
+
+```
+sudo apt install ubuntu-gnome-desktop -y
+```
+
+```
+sudo apt install ubuntu-gnome-desktop -y
+```
+
+```
+passwd
+```
+
 https://posintech.com/give-your-linux-desktop-a-clean-look/
 
 sudo apt update
