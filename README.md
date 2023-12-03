@@ -1,56 +1,71 @@
-# Linux VM install GUI Desktop GNOME
+# Linux VM install GUI Desktop XFCE
 
-## Install GNOME Ubuntu 22.04
-
-https://serverspace.io/es/support/help/install-gnome-ubuntu-22-04/
-
-```
-sudo apt install ubuntu-gnome-desktop -y
-```
-
-```
-sudo apt install ubuntu-gnome-desktop -y
-```
-
-```
-passwd
-```
-
-## Install a desktop environment on your Linux VM
-
-## Create a Network Security Group rule for Remote Desktop traffic
-
-```
-az vm open-port --resource-group myResourceGroup --name myVM --port 3389
-```
-
-## Other procedure to install GNOME
-
-https://posintech.com/give-your-linux-desktop-a-clean-look/
-
-sudo apt update
-
-sudo apt upgrade
-
-sudo apt install tasksel
-
-sudo tasksel
-
-GNOME
-
-reboot
-
-Ctrl+Alt+T
-
-sudo apt install bind9
-
-------------------------------------------------------------------------------------------------------
+## 1. (Option1) Create in Azure a Linux Ubuntu server VM (Spot instance)
 
 
-sudo apt update
+## 1. (Option2) Create in AWS a Linux Ubuntu server VM (Spot instance)
 
-sudo apt install gnome-shell
 
-Now select GDM or LightDM
 
-sudo apt install gnome-tweaks -y
+## 2. Install and configure xrdp to use Remote Desktop with Ubuntu
+
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop?tabs=azure-cli
+
+
+
+
+## 3. Install VSCode and extensions
+
+
+
+
+## 4. Install Google Chrome
+
+
+
+
+
+## 5. Install .NET 8
+
+
+
+
+## 4. Install Docker 
+
+
+
+
+
+## 5. Install Portainer
+
+
+
+
+## 6. Download and run a MongoDB docker container
+
+
+
+
+## 7. Install Studio 3T for MongoDB
+
+
+
+
+
+
+
+## 8. Install Node.js
+
+
+
+
+
+
+## 9. Install Angular CLI
+
+
+
+
+
+
+## 10. 
