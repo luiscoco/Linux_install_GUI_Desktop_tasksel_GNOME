@@ -18,6 +18,14 @@ passwd
 
 ## Install a desktop environment on your Linux VM
 
+## Create a Network Security Group rule for Remote Desktop traffic
+
+```
+az vm open-port --resource-group myResourceGroup --name myVM --port 3389
+```
+
+## Other procedure to install GNOME
+
 https://posintech.com/give-your-linux-desktop-a-clean-look/
 
 sudo apt update
