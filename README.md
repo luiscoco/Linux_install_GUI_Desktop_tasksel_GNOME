@@ -11,65 +11,73 @@
 
 https://www.xfce.org/
 
-## 2. Install and configure XRDP to use Remote Desktop with Ubuntu
+**IMPORTANT NOTE**: top 10 best Linux desktop environments
+
+https://tecadmin.net/best-linux-desktop-environments/
+
+## 3. Install and configure XRDP to use Remote Desktop with Ubuntu
 
 https://learn.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop?tabs=azure-cli
 
 
 
 
-## 3. Install VSCode and extensions
+## 4. Install VSCode and extensions
 
 
 
 
-## 4. Install Google Chrome
-
-
-
-
-
-## 5. Install .NET 8
-
-
-
-
-## 4. Install Docker 
+## 5. Install Google Chrome
 
 
 
 
 
-## 5. Install Portainer
+## 6. Install .NET 8
 
 
 
 
-## 6. Download and run a MongoDB docker container
-
-
-
-
-## 7. Install Studio 3T for MongoDB
+## 7. Install Docker 
 
 
 
 
 
+## 8. Install Portainer
 
 
-## 8. Install Node.js
+
+
+## 9. Download and run a MongoDB docker container
+
+
+
+
+## 10. Install Studio 3T for MongoDB
 
 
 
 
 
 
-## 9. Install Angular CLI
+
+## 11. Install Node.js
 
 
 
 
 
 
-## 10. 
+## 12. Install Angular CLI
+
+
+
+
+
+
+## 13. 
+
+
+
+
