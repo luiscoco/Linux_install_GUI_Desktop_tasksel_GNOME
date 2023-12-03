@@ -1,4 +1,6 @@
-# Linux_install_GUI_Desktop_tasksel_GNOME
+# Linux VM install GUI Desktop GNOME
+
+## Install GNOME Ubuntu 22.04
 
 https://serverspace.io/es/support/help/install-gnome-ubuntu-22-04/
 
@@ -13,6 +15,8 @@ sudo apt install ubuntu-gnome-desktop -y
 ```
 passwd
 ```
+
+## Install a desktop environment on your Linux VM
 
 https://posintech.com/give-your-linux-desktop-a-clean-look/
 
