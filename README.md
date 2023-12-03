@@ -1,4 +1,4 @@
-# Linux_install_tasksel_GNOME
+# Linux_install_GUI_Desktop_tasksel_GNOME
 
 https://posintech.com/give-your-linux-desktop-a-clean-look/
 
