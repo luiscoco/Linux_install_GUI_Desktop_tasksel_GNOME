@@ -366,21 +366,29 @@ db.mycollection.insertMany([
 
 
 
-## 13. Install Node.js
+
+## 13. Install IntelliJ Community
 
 
 
 
 
 
-## 14. Install Angular CLI
+## 14. Install Node.js
 
 
 
 
 
 
-## 13. 
+## 15. Install Angular CLI
+
+
+
+
+
+
+## 16. 
 
 
 
