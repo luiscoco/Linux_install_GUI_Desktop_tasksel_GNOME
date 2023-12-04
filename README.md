@@ -15,14 +15,44 @@ https://www.xfce.org/
 
 https://tecadmin.net/best-linux-desktop-environments/
 
+Run this commands to install xfce in the Linux VM
+
+```
+sudo apt-get update
+
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install xfce4
+
+sudo apt install xfce4-session
+```
+
 ## 3. Install and configure XRDP to use Remote Desktop with Ubuntu
 
 https://learn.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop?tabs=azure-cli
 
+Run this commands to install and configure xrdp in your Linux VM:
+
+```
+sudo apt-get -y install xrdp
+sudo systemctl enable xrdp
+sudo adduser xrdp ssl-cert
+echo xfce4-session >~/.xsession
+sudo service xrdp restart
+sudo passwd azureuser
+```
+
+## 4. Be user you open the RDP port
+
+For Azure Linux VM run the command:
+
+```
+az vm open-port --resource-group myResourceGroup --name myVM --port 3389
+```
+
+For AWS Linux VM open the 3389 port for RDP when configuring/creating the new Linux VM instance
 
 
 
-## 4. Install VSCode and extensions
+## 5. Install VSCode and extensions
 
 
 
