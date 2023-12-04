@@ -41,6 +41,27 @@ We check the VM was created, we press in the VM id link
 
 ![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/4935341d-ce34-4f2a-a831-4e0472d818c9)
 
+See the new VM in the instances list
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/04049b83-5f7a-47ea-8fc1-464d596c9ce7)
+
+Select the instance and press the "Connect" button
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/235890bd-9643-459f-86b2-667272d10e58)
+
+For connecting to the Linux VM via SSH type press the "ssh client" tab and copy the command
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/99da5e9b-fb4a-469d-9de3-f5faed8b97a4)
+
+In our case we placed the private key file *.pem in the .ssh path, then for connecting to the Linux VM we have to type the command:
+
+```
+ssh -i C:/Users/LEnriquez/.ssh/mynewxfceawskeypair.pem ubuntu@ec2-35-180-41-178.eu-west-3.compute.amazonaws.com
+```
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/10c8685a-67b4-41d5-8e98-54e6ab2e743b)
+
+You can see we enter in our Linux VM with the user "ubuntu"
 
 ## 2. Install XFCE (GUI Desktop for Ubuntu Linux VM)
 
