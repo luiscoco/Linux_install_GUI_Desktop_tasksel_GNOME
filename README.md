@@ -267,8 +267,76 @@ You'll be prompted to set up an admin user and password.
 
 ## 11. Download and run a MongoDB docker container
 
+Docker makes it pretty straightforward to run MongoDB in a container. Here's a basic guide to get you started:
 
+### 11.1. Install Docker:
 
+Make sure you have Docker installed on your machine. You can download it from the official Docker website.
+
+### 11.2. Pull MongoDB Docker Image:
+
+Open a terminal and run the following command to pull the official MongoDB image from Docker Hub:
+
+```
+docker pull mongo
+```
+
+### 11.3. Run MongoDB Container:
+
+Once the image is downloaded, you can run a MongoDB container using the following command:
+
+```
+docker run -d -p 27017:27017 --name my-mongodb mongo
+```
+
+This command runs a detached (-d) MongoDB container, maps the host port 27017 to the container port 27017, and gives it a name (--name my-mongodb). You can change the name if you prefer.
+
+### 11.4. Access MongoDB Shell:
+
+To access the MongoDB shell in the running container, use the following command:
+
+```
+docker exec -it my-mongodb mongo
+```
+
+Replace my-mongodb with the name you gave to your container.
+
+### 11.5. To stop and remove the MongoDB docker container
+
+```
+docker stop my-mongodb
+docker rm my-mongodb
+```
+
+### 11.6. How to create a MongoDB database sample, with a collection and some documents
+
+Once you have connected to your MongoDB container using the docker exec -it my-mongodb mongo command, you can create a new database, a collection, and insert some sample documents. Here's an example:
+
+**Create a new database**:
+
+```
+use mydatabase
+```
+
+Replace mydatabase with the name you want for your new database.
+
+**Create a new collection**:
+
+```
+db.createCollection("mycollection")
+```
+
+Replace mycollection with the name you want for your new collection.
+
+**Insert some sample documents**:
+
+```
+db.mycollection.insertMany([
+  { name: "John Doe", age: 30, city: "New York" },
+  { name: "Jane Doe", age: 25, city: "San Francisco" },
+  { name: "Bob Smith", age: 35, city: "Los Angeles" }
+])
+```
 
 ## 12. Install Studio 3T for MongoDB
 
