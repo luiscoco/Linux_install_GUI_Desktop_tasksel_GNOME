@@ -140,25 +140,47 @@ For AWS see this picture
 
 ![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/a0fdf824-1cf7-4fe5-840d-c660221c6c89)
 
+## 6. How to install VSCode
 
+Open a Terminal Emulator window and run the following commands to install the VSCode application
 
-## 6. Install VSCode and extensions
+![image](https://github.com/luiscoco/Azure_VM_Ubuntu_with_GUI_Desktop/assets/32194879/98e76ee1-5832-4536-9692-babdce81e9ad)
 
+```bash
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
+```
 
+For accessing VSCode type the command:
 
+```
+code
+```
 
-## 7. Install Google Chrome
+## 7. How to install Google Chrome
 
+```bash
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
 
+## 8. How to install .NET 8
 
+```bash
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
 
+sudo apt update
 
-## 8. Install .NET 8
+sudo snap install dotnet-sdk --classic
 
+dotnet --version
+```
 
-
-
-## 9. Install Docker 
+## 9. Install Docker
 
 To install Docker Desktop on a Linux virtual machine, you can follow these general steps. 
 
