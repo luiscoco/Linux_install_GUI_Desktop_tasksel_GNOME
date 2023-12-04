@@ -15,6 +15,31 @@ Move the private key *.pem file from Download folder to .ssh folder
 
 ![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/e4327c04-dff3-498e-b417-cbd488406387)
 
+After creating the ssh key pair we select it
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/c86479ba-8bc7-4e44-9687-9060c95c70da)
+
+Now we set the networking options. We only have to include a new inbound rule for RDP 3389 port
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/ecb0a621-fdd9-42ce-a774-a1cea9ad2a56)
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/8097586b-0f9c-4a07-b197-2e7fb20beb46)
+
+Now we set the VM hard disk capacity to 30 Gb because is free
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/21591d34-5ad9-4391-acf3-8f580dea4c07)
+
+Finally we request a Spot instance for reducing the VM cost
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/c5df0234-26d7-4c98-b004-da07d1834059)
+
+Then we create the Linux VM pressing the "Launch Instance" button
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/e2bec630-8251-429e-8c39-6fb0a46ed468)
+
+We check the VM was created, we press in the VM id link
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/4935341d-ce34-4f2a-a831-4e0472d818c9)
 
 
 ## 2. Install XFCE (GUI Desktop for Ubuntu Linux VM)
