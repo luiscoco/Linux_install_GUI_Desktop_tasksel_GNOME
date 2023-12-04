@@ -63,6 +63,12 @@ ssh -i C:/Users/LEnriquez/.ssh/mynewxfceawskeypair.pem ubuntu@ec2-35-180-41-178.
 
 You can see we enter in our Linux VM with the user "ubuntu"
 
+Edit the VM Security Group to add two new outbound for the protocols "HTTP" and "HTTPS" in order to access to Internet from the Linux VM
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/39b74110-2c30-47a2-9ebc-6ee504269d93)
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/bacc76eb-1bc2-4e45-853c-d12d6a889fb2)
+
 ## 2. Install XFCE (GUI Desktop for Ubuntu Linux VM)
 
 https://www.xfce.org/
