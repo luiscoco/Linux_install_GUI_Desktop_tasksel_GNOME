@@ -269,9 +269,21 @@ You'll be prompted to set up an admin user and password.
 
 Docker makes it pretty straightforward to run MongoDB in a container. Here's a basic guide to get you started:
 
-### 11.1. Install Docker:
+### 11.1. Install Docker as explained in section 9. and then login:
 
 Make sure you have Docker installed on your machine. You can download it from the official Docker website.
+
+Let's try adding the group directly using the newgrp command:
+
+```
+newgrp docker
+```
+
+After running this command, try running docker login again:
+
+```
+docker login
+```
 
 ### 11.2. Pull MongoDB Docker Image:
 
@@ -280,6 +292,8 @@ Open a terminal and run the following command to pull the official MongoDB image
 ```
 docker pull mongo
 ```
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/e4af5621-4048-463f-9841-22763c194045)
 
 ### 11.3. Run MongoDB Container:
 
@@ -291,21 +305,25 @@ docker run -d -p 27017:27017 --name my-mongodb mongo
 
 This command runs a detached (-d) MongoDB container, maps the host port 27017 to the container port 27017, and gives it a name (--name my-mongodb). You can change the name if you prefer.
 
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/557c0b97-ee09-441e-a606-6300d6f06869)
+
 ### 11.4. Access MongoDB Shell:
 
 To access the MongoDB shell in the running container, use the following command:
 
 ```
-docker exec -it my-mongodb mongo
+sudo docker exec -it my-mongodb bash
 ```
 
 Replace my-mongodb with the name you gave to your container.
 
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/c6cc324c-498f-44f3-bf4a-b667683607b0)
+
 ### 11.5. To stop and remove the MongoDB docker container
 
 ```
-docker stop my-mongodb
-docker rm my-mongodb
+sudo docker stop my-mongodb
+sudo docker rm my-mongodb
 ```
 
 ### 11.6. How to create a MongoDB database sample, with a collection and some documents
@@ -337,6 +355,8 @@ db.mycollection.insertMany([
   { name: "Bob Smith", age: 35, city: "Los Angeles" }
 ])
 ```
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/27f11579-999f-4b8d-975a-b8b263e3a30b)
 
 ## 12. Install Studio 3T for MongoDB
 
