@@ -217,8 +217,31 @@ This command downloads a test image and runs a container. If everything is set u
 
 ## 9. Install Portainer
 
+Portainer is a great choice for managing Docker containers with a user-friendly interface. Here are the commands to install Portainer on your Linux virtual machine:
 
+## 9.1 Create a Docker volume for Portainer data:
 
+```
+sudo docker volume create portainer_data
+```
+
+## 9.2. Run Portainer as a Docker container:
+
+```
+sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+```
+
+This command pulls the Portainer image from Docker Hub and starts a container named "portainer" with access to the Docker socket for managing containers. 
+
+Portainer will be available on port 9000.
+
+## 9.3. Access Portainer in your web browser:
+
+Open your web browser and go to **http://localhost:9000** or replace localhost with the IP address of your virtual machine if you are accessing it remotely. 
+
+You'll be prompted to set up an admin user and password.
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/5c9beb0f-99f3-4ce9-a617-049fd0715ba6)
 
 ## 10. Download and run a MongoDB docker container
 
