@@ -160,8 +160,59 @@ For AWS see this picture
 
 ## 8. Install Docker 
 
+To install Docker Desktop on a Linux virtual machine, you can follow these general steps. 
 
+Keep in mind that the commands might vary slightly depending on your Linux distribution.
 
+Update Package Index:
+
+```
+sudo apt update
+```
+
+If you're using a distribution other than Ubuntu, replace apt with your package manager, such as yum for CentOS or dnf for Fedora.
+
+### 8.1. Install dependencies:
+
+```
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+```
+
+### 8.2. Add Docker's official GPG key:
+
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+```
+
+### 8.3. Replace linux/ubuntu with your distribution if it's different.
+
+Set up the stable repository:
+
+```
+echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+### 8.4. Adjust the distribution in the URL if needed.
+
+Update the package index again:
+
+```
+sudo apt update
+```
+
+### 8.5. Install Docker Engine:
+
+```
+sudo apt install docker-ce docker-ce-cli containerd.io
+```
+
+### 8.6. Verify Docker installation:
+
+```
+sudo docker run hello-world
+```
+
+This command downloads a test image and runs a container. If everything is set up correctly, you'll see a "Hello from Docker!" message.
 
 
 ## 9. Install Portainer
