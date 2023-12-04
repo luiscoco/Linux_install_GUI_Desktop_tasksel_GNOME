@@ -111,7 +111,7 @@ sudo service xrdp restart
 sudo passwd azureuser
 ```
 
-## 4. Be user you open the RDP port
+## 4. Be user you open the RDP port 3389
 
 For Azure Linux VM run the command:
 
