@@ -33,10 +33,15 @@ Run this commands to install and configure xrdp in your Linux VM:
 
 ```
 sudo apt-get -y install xrdp
+
 sudo systemctl enable xrdp
+
 sudo adduser xrdp ssl-cert
+
 echo xfce4-session >~/.xsession
+
 sudo service xrdp restart
+
 sudo passwd azureuser
 ```
 
@@ -57,34 +62,34 @@ For AWS Linux VM open the 3389 port for RDP when configuring/creating the new Li
 
 
 
-## 5. Install Google Chrome
+## 6. Install Google Chrome
 
 
 
 
 
-## 6. Install .NET 8
+## 7. Install .NET 8
 
 
 
 
-## 7. Install Docker 
+## 8. Install Docker 
 
 
 
 
 
-## 8. Install Portainer
+## 9. Install Portainer
 
 
 
 
-## 9. Download and run a MongoDB docker container
+## 10. Download and run a MongoDB docker container
 
 
 
 
-## 10. Install Studio 3T for MongoDB
+## 11. Install Studio 3T for MongoDB
 
 
 
