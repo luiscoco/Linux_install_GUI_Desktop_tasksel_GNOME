@@ -112,6 +112,25 @@ az vm open-port --resource-group myResourceGroup --name myVM --port 3389
 For AWS Linux VM open the 3389 port for RDP when configuring/creating the new Linux VM instance
 
 
+## 5. Connect to the Linux VM with Remote Desktop Connection
+
+Set the Linux VM **Public IP address**
+
+Set the Linux VM **username**
+
+For Azure see this picture
+
+For AWS see this picture
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/0888a20e-0898-4f60-b70f-f5b58150ae8e)
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/a2a8c409-48cb-44dd-84af-88ef8acd5689)
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/42853bb2-6808-4da0-8e5e-908d76fcf7d7)
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/a0fdf824-1cf7-4fe5-840d-c660221c6c89)
+
+
 
 ## 5. Install VSCode and extensions
 
