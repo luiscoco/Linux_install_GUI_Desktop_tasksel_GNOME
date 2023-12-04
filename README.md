@@ -142,23 +142,23 @@ For AWS see this picture
 
 
 
-## 5. Install VSCode and extensions
+## 6. Install VSCode and extensions
 
 
 
 
-## 6. Install Google Chrome
+## 7. Install Google Chrome
 
 
 
 
 
-## 7. Install .NET 8
+## 8. Install .NET 8
 
 
 
 
-## 8. Install Docker 
+## 9. Install Docker 
 
 To install Docker Desktop on a Linux virtual machine, you can follow these general steps. 
 
@@ -172,19 +172,19 @@ sudo apt update
 
 If you're using a distribution other than Ubuntu, replace apt with your package manager, such as yum for CentOS or dnf for Fedora.
 
-### 8.1. Install dependencies:
+### 9.1. Install dependencies:
 
 ```
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 ```
 
-### 8.2. Add Docker's official GPG key:
+### 9.2. Add Docker's official GPG key:
 
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 
-### 8.3. Replace linux/ubuntu with your distribution if it's different.
+### 9.3. Replace linux/ubuntu with your distribution if it's different.
 
 Set up the stable repository:
 
@@ -192,7 +192,7 @@ Set up the stable repository:
 echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-### 8.4. Adjust the distribution in the URL if needed.
+### 9.4. Adjust the distribution in the URL if needed.
 
 Update the package index again:
 
@@ -200,13 +200,13 @@ Update the package index again:
 sudo apt update
 ```
 
-### 8.5. Install Docker Engine:
+### 9.5. Install Docker Engine:
 
 ```
 sudo apt install docker-ce docker-ce-cli containerd.io
 ```
 
-### 8.6. Verify Docker installation:
+### 9.6. Verify Docker installation:
 
 ```
 sudo docker run hello-world
@@ -215,17 +215,17 @@ sudo docker run hello-world
 This command downloads a test image and runs a container. If everything is set up correctly, you'll see a "Hello from Docker!" message.
 
 
-## 9. Install Portainer
+## 10. Install Portainer
 
 Portainer is a great choice for managing Docker containers with a user-friendly interface. Here are the commands to install Portainer on your Linux virtual machine:
 
-## 9.1 Create a Docker volume for Portainer data:
+## 10.1 Create a Docker volume for Portainer data:
 
 ```
 sudo docker volume create portainer_data
 ```
 
-## 9.2. Run Portainer as a Docker container:
+## 10.2. Run Portainer as a Docker container:
 
 ```
 sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
@@ -235,7 +235,7 @@ This command pulls the Portainer image from Docker Hub and starts a container na
 
 Portainer will be available on port 9000.
 
-## 9.3. Access Portainer in your web browser:
+## 10.3. Access Portainer in your web browser:
 
 Open your web browser and go to **http://localhost:9000** or replace localhost with the IP address of your virtual machine if you are accessing it remotely. 
 
@@ -243,27 +243,27 @@ You'll be prompted to set up an admin user and password.
 
 ![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/5c9beb0f-99f3-4ce9-a617-049fd0715ba6)
 
-## 10. Download and run a MongoDB docker container
+## 11. Download and run a MongoDB docker container
 
 
 
 
-## 11. Install Studio 3T for MongoDB
-
-
-
-
-
-
-
-## 11. Install Node.js
+## 12. Install Studio 3T for MongoDB
 
 
 
 
 
 
-## 12. Install Angular CLI
+
+## 13. Install Node.js
+
+
+
+
+
+
+## 14. Install Angular CLI
 
 
 
