@@ -69,6 +69,10 @@ Edit the VM Security Group to add two new outbound for the protocols "HTTP" and 
 
 ![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/bacc76eb-1bc2-4e45-853c-d12d6a889fb2)
 
+Do not forget to reboot the EC2 instance to take efect the new outbound rules for "HTTP" and "HTTPS"
+
+![image](https://github.com/luiscoco/Linux_install_XFCE_GUI_Desktop/assets/32194879/889cb1e2-af40-4a1d-8173-45d0fff5a695)
+
 ## 2. Install XFCE (GUI Desktop for Ubuntu Linux VM)
 
 https://www.xfce.org/
